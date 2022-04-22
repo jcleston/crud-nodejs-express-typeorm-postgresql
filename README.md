@@ -15,10 +15,6 @@
 Crud completo com NodeJs + Express + TypeORM + PostgreSQL 🚀
 
 
-express
-typescript
-typeORM
-
 ## Menu Geral
 <!--ts-->
 * [Instalação](#instalação)
