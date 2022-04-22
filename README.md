@@ -15,5 +15,61 @@
 Crud completo com NodeJs + Express + TypeORM + PostgreSQL 🚀
 
 
+express
+typescript
+typeORM
+
+## Menu Geral
+<!--ts-->
+* [Instalação](#instalação)
+    * [Express](#express)
+    * [Typescript](#typescript)
+    * [TypeORM](#typeorm)
+* [Execução](#execução)
+    
+<!--te-->
+<br /><br />
+
+## Instalação
+Para iniciar o desenvolvimento, é necessário efetuar as seguintes instalações:
+
+```shell
+//Criar o package.jsom
+$ yarn init -y
+```
+
+## Express
+```shell
+$ yarn add express
+```
+## Typescript
+```shell
+$ yarn add typescript ts-node-dev @types/express -D
+```
+Para iniciar o Typescript execute o comando:
+```shell
+$ yarn tsc --init
+```
+
+Configure o arquivo tsconfig.json com o seguintes parâmetros:
+```shell
+"target": "es2021"
+"strict": false
+```
+
+## TypeORM
+```shell
+$ yarn add typeorm reflect-metadata pg
 
 
+
+```
+Documentação oficial no link: <a href="https://typeorm.io/">typeorm.io</a>
+
+## Execução
+//Rode o seguinte comando no diretório raiz do projeto
+```shell
+$ yarn dev
+ou 
+$ yarn ts-node-dev --transpile-only src/server.ts
+```
