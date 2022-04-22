@@ -60,11 +60,30 @@ Configure o arquivo tsconfig.json com o seguintes parâmetros:
 ## TypeORM
 ```shell
 $ yarn add typeorm reflect-metadata pg
-
-
-
 ```
 Documentação oficial no link: <a href="https://typeorm.io/">typeorm.io</a>
+
+Para rodar o TypeORM configure o arquivo package.json, depois utilize os seguintes comandos:
+```shell
+//Adicionar nos scripts do package.json
+"typeorm": "ts-node-dev node_modules/.bin/typeorm"
+
+//Rodar o comando
+$ yarn typeorm
+ou
+$ yarn ts-node-dev node_modules/.bin/typeorm
+```
+
+Configure o arquivo tsconfig.json com o seguintes parâmetros:
+```shell
+"experimentalDecorators": true,
+"emitDecoratorMetadata": true,
+```
+
+Para criar uma migration utilize o comando:
+```shell
+yarn typeorm migration:create -o nome_migration
+```
 
 ## Execução
 //Rode o seguinte comando no diretório raiz do projeto
